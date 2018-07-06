@@ -1,0 +1,40 @@
+/* .reveal div.slide-background.present {
+  opacity: 0.5;
+} */
+
+.reveal div.slide-background.present {
+  background-size: contain;
+}
+
+.reveal .block {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(0.2, 0.3, 0.4, 0.5);
+}
+
+.reveal .left {
+  float: left;
+  width: 45%;
+}
+
+.reveal .right {
+  float: right;
+  width: 45%;
+}
+
+.reveal .header {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 500;
+  font-size: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+}
