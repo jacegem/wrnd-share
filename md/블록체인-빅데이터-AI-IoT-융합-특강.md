@@ -4,13 +4,6 @@ theme : "night"
 transition: "slide"
 transitionSpeed: 'slow'
 highlightTheme: "darkula"
----
-
-#### 블록체인 + 빅데이터 + AI + IoT 융합 특강 세미나 공유
-
-1.  홍익대학교에 처음 가봤습니다 <!-- .element: class="fragment fade-up"-->
-2.  매우 더웠습니다.<!-- .element: class="fragment fade-up"-->
-3.  장소를 바꿔서 찾느라 고생했습니다. (왜 공지를 안하는지...)<!-- .element: class="fragment fade-up"-->
 
 ---
 
@@ -29,7 +22,7 @@ highlightTheme: "darkula"
 
 ## 자료는 이곳에
 
-- 발표자료: http://bit.ly/wrnd73pt
+- 발표자료: https://jacegem.github.io/wrnd-share
 - 사진: http://bit.ly/wrnd73pic
 
 >
