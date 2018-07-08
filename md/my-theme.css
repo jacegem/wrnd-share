@@ -2,6 +2,10 @@
   opacity: 0.5;
 } */
 
+.reveal li {
+  font-size: 90%;
+}
+
 .reveal div.slide-background.present {
   background-size: contain;
 }

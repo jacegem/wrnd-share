@@ -251,7 +251,7 @@ AI On the Blockchain
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 반응형 -->
-<div style="text-align:center;margin-top:20px">
+<div style="text-align:center;margin-top:20px; height:300px">
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-9184373525576918"
