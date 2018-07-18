@@ -16,7 +16,7 @@ highlightTheme: "darkula"
 
 ---
 
-<!-- .slide: data-background="https://goo.gl/q32qp3" class="dark-->
+<!-- .slide: data-background="https://goo.gl/q32qp3" class="dark"-->
 
 ### 6th TOBIGS DATA CONFERENCE <!-- .element: class="fragment fade-up block"-->
 
