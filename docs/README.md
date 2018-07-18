@@ -6,6 +6,13 @@
 - [2018 Seoul Metropolitan Fora](./2018 Seoul Metropolitan Fora - SMF-export)
 - [블록체인 + 빅데이터 + AI + IoT 융합 특강](./블록체인-빅데이터-AI-IoT-융합-특강-export)
 
+### 사내교육
+
+- [Autohotkey](./Autohotkey-export)
+- [정규표현식](./Regex-export)
+- [마크다운](./Markdown-export)
+- [Wiki](./wiki-export)
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 <ins class="adsbygoogle"
@@ -18,10 +25,3 @@
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-
-### 사내교육
-
-- [Autohotkey](./Autohotkey-export)
-- [정규표현식](./Regex-export)
-- [마크다운](./Markdown-export)
-- [Wiki](./wiki-export)
