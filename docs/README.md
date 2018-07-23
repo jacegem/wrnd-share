@@ -25,7 +25,7 @@
 - [정규표현식](./2018/Regex-export)
 - [마크다운](./2018/Markdown-export)
 - [Wiki](./2018/wiki-export)
-- 새로운 내용...
+- 새로운 내용...2
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 반응형 -->
@@ -45,7 +45,6 @@ var disqus_config = function () {
 this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
 };
-*/
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://jacegem.disqus.com/embed.js';
