@@ -1,2 +1,4 @@
 theme: jekyll-theme-slate
-exclude: *.md
+exclude:
+  - publish/wiki.md
+  - *.md
