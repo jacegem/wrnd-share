@@ -15,16 +15,16 @@
 
 ### 컨퍼런스
 
-- [IBM Cloud & Data Summit 2018](./publish/IBM Cloud & Data Summit 2018-export)
-- [2018 Seoul Metropolitan Fora](./publish/2018 Seoul Metropolitan Fora - SMF-export)
-- [블록체인 + 빅데이터 + AI + IoT 융합 특강](./publish/블록체인-빅데이터-AI-IoT-융합-특강-export)
+- [IBM Cloud & Data Summit 2018](./2018/IBM Cloud & Data Summit 2018-export)
+- [2018 Seoul Metropolitan Fora](./2018/2018 Seoul Metropolitan Fora - SMF-export)
+- [블록체인 + 빅데이터 + AI + IoT 융합 특강](./2018/블록체인-빅데이터-AI-IoT-융합-특강-export)
 
 ### 사내교육
 
-- [Autohotkey](./publish/Autohotkey-export)
-- [정규표현식](./publish/Regex-export)
-- [마크다운](./publish/Markdown-export)
-- [Wiki](./publish/wiki-export)
+- [Autohotkey](./2018/Autohotkey-export)
+- [정규표현식](./2018/Regex-export)
+- [마크다운](./2018/Markdown-export)
+- [Wiki](./2018/wiki-export)
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 반응형 -->
