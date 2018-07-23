@@ -1,0 +1,68 @@
+/* .reveal div.slide-background.present {
+  opacity: 0.5;
+} */
+
+.reveal li {
+  font-size: 90%;
+}
+
+.reveal .small {
+  font-size: 50%;
+}
+
+.reveal div.slide-background.present {
+  background-size: contain;
+}
+
+.reveal .block {
+  /* display: inline; */
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgba(0.2, 0.3, 0.4, 0.7);
+}
+
+.reveal .orange {
+  /* display: inline; */
+  color: orange;
+}
+
+.reveal .greenyellow {
+  /* display: inline; */
+  color: greenyellow;
+}
+
+.reveal .red {
+  /* display: inline; */
+  color: red;
+}
+
+.reveal .yello {
+  /* display: inline; */
+  color: yellow;
+}
+
+.reveal .left {
+  float: left;
+  width: 45%;
+}
+
+.reveal .right {
+  float: right;
+  width: 45%;
+}
+
+.reveal .header {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+  z-index: 500;
+  font-size: 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.reveal .footer {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  font-size: 0.5em;
+}

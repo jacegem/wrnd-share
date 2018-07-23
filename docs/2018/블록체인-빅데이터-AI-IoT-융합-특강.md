@@ -1,5 +1,5 @@
 ---
-customTheme : "my-theme"
+customTheme : "reveal-custom-theme"
 theme : "night"
 transition: "slide"
 transitionSpeed: 'slow'
@@ -255,7 +255,7 @@ AI On the Blockchain
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
----
+--
 
 ## auto with div height 300px
 
@@ -271,7 +271,7 @@ AI On the Blockchain
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
----
+--
 
 ## in-article
 
@@ -288,7 +288,7 @@ AI On the Blockchain
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
----
+--
 
 ## in-article with div height 300px
 
@@ -304,4 +304,34 @@ AI On the Blockchain
 
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+--
+
+### box
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 상단336검정 -->
+<div style="text-align:center;">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9184373525576918"
+     data-ad-slot="6957178622"></ins></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+--
+
+### box with height 300px
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 상단336검정 -->
+<div style="text-align:center; height:300px">
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-9184373525576918"
+     data-ad-slot="6957178622"></ins></div>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
 </script>
