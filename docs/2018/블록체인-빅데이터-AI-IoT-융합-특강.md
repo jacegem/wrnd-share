@@ -240,7 +240,24 @@ AI On the Blockchain
 
 ---
 
-## 감사합니다.
+## auto
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 반응형 -->
+
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9184373525576918"
+     data-ad-slot="1959714988"
+     data-ad-format="auto"></ins>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+---
+
+## auto with div height 300px
 
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- 반응형 -->
@@ -252,4 +269,39 @@ AI On the Blockchain
      data-ad-format="auto"></ins></div>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+---
+
+## in-article
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9184373525576918"
+     data-ad-slot="4673445327"></ins>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+---
+
+## in-article with div height 300px
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<div style="text-align:center;margin-top:20px; height:300px">
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-9184373525576918"
+     data-ad-slot="4673445327"></ins></div>
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
