@@ -4,7 +4,6 @@ theme : "night"
 transition: "slide"
 transitionSpeed: 'slow'
 highlightTheme: "darkula"
-
 ---
 
 ### 블록체인 + 빅데이터 + AI + IoT 융합 특강
