@@ -1,17 +1,22 @@
 ---
-customTheme : "reveal-custom-theme"
 theme : "night"
+highlightTheme: "darkula"
+customTheme : "reveal-custom-theme"
 transition: "slide"
 transitionSpeed: 'slow'
-highlightTheme: "darkula"
 ---
 
 # vscode 에서 revealjs 사용
 
+- vscode : https://code.visualstudio.com/
+- revealjs : https://revealjs.com
+
 note:
 
-- visual studio 코드에서 revealjs 를 사용하는 법을 알아보겠습니다.
-- revealjs 만들가지고 사용할 수도 있지만, vscode 를 통해서 쉽게 프리젠테이션을 만들어 보겠습니다.
+- **visual studio 코드**에서 **revealjs** 를 사용하는 법을 알아보겠습니다.
+- reveal.js 프레임워크만을 가지고 프리젠테이션을 만들 수 있습니다.
+- 그러기 위해서는 node 를 설치하고 명령어를 입력해야 하는 번거로움이 있습니다.
+- vscode 를 통해서 쉽게 사용해 보도록 하겠습니다.
 
 --
 
@@ -25,11 +30,11 @@ note:
 
 note:
 
-- vscode 란 무엇인가?
+- vscode 에 대해서 먼저 살펴보겠습니다.
 - 위키피디아예서 비주얼 스튜디오 코드(영어: Visual Studio Code)는 마이크로소프트가 마이크로소프트 윈도우, macOS, 리눅스용으로 개발한 소스 코드 편집기로 설명되어 있습니다.
-- 제가 요즘 가장 많이 사용하는 에디터 입니다.
+- 제가 요즘 가장 많이 사용하는 에디터가 **vscode** 입니다.
 - 중요한 것은 **무료**라는 것입니다.
-- 그리고 어느 플랫폼에서도 사용할 수 있습니다.
+- 그리고 어느 플랫폼에서도 사용할 수 있는 장점이 있습니다.
 - 크로스플랫폼으로 윈도우, 리눅스, 맥을 모두 지원합니다.
 - 비슷한 에디터로는 github 에서 만든 **Atom** 이 있습니다.
 
@@ -226,6 +231,31 @@ note:
 - 느낌표 뒤에 대괄호로 이미지의 설명을 입력하고, 괄호안에 이미지의 주소를 입력합니다.
 - 이미지의 설명은 생략될 수 있습니다.
 
+--
+
+## 코드 작성
+
+예제코드
+
+<pre>
+```python
+new_list = []
+for i in old_list:
+    if filter(i):
+        new_list.append(expressions(i))
+```
+</pre>
+
+- https://highlightjs.org/
+- 176 languages and 79 styles
+
+note:
+
+- 어퍼스트로피 3 개를 이어서 작성하여 코드 블럭의 시작과 끝을 표시합니다.
+- 시작부분에 코드의 언어를 지정합니다.
+- 지정할 수 있는 언어의 목록은 https://highlightjs.org/ 에서 확인 할 수 있습니다.
+- 내부적으로 hightlightjs 를 사용하고 있으므로, 여기서 제공하는 176 가지 언어와 79 가지의 스타일을 지정할 수 있습니다.
+
 ---
 
 ## 작성
@@ -254,7 +284,7 @@ note:
 
 ---
 
-### 기능확인
+## 기능확인
 
 ![](https://goo.gl/okH3DE)
 
@@ -262,6 +292,36 @@ note:
 2.  pdf 파일로 출력
 3.  브라우저에서 미리보기
 4.  사이드에서 미리보기
+
+--
+
+### html 출력
+
+![](https://goo.gl/7uzgPe)
+
+- /helloworld-export 폴더
+- /helloworld-export/index.html 파일
+
+```html
+<div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># Hello World
+
+- First item
+- Second item
+- Third item
+- Fourth item
+
+![](https://code.visualstudio.com/assets/images/home-intellisense.svg)
+</script></section></div>
+```
+
+note:
+
+- 작성한 마크다운 파일이 있는 곳에 helloworld-export 폴더가 생성됩니다.
+- 그리고 그 안에 들어가 보면 프리젠테이션을 위한 파일들이 생성되어 있는 것을 확인할 수 있습니다.
+- 여기서 index.html 파일이 작성한 프리젠테이션 파일입니다.
+- 파일의 내용을 열어보면 작성한 내용을 확인할 수 있습니다.
+- revealjs 만들 사용하여 만들경우 위와 같은 내용을 직접 작성해주면 됩니다. 조금더 작성해야 할 내용이 늘어나게 됩니다.
 
 --
 
@@ -279,19 +339,54 @@ note:
 
 ## 페이지 분할
 
-**---** 를 사용하여 수평분할, **--** 를 사용하여 수직분할 할 수 있습니다.
+- **---** : 수평분할
+- **--** : 수직분할
 
-먼저 **---** 를 입력하여 페이지를 분할하면, 페이지 목록을 SLIDES 패널에서 확인할 수 있습니다.
+![](https://goo.gl/TNKNRf)
 
-![](https://goo.gl/Pyunpf)
+note:
 
-**--** 를 사용하여 수직분할하면 해당 페이지 하위로 구분됩니다.
+- **---** 를 사용하여 수평분할, **--** 를 사용하여 수직분할 할 수 있습니다.
+- 기본적으로 대쉬 3 개를 사용하여 수평분할로 페이지를 작성합니다. 수평분할된 페이지는 오른쪽으로 이동합니다.
+- 세부내용의 페이지를 작성할 경우 대쉬 2 개를 사용하여 페이지를 작성합니다. 이때 페이지는 아래쪽으로 이동합니다.
+- 화면 오른쪽 아래위치에
+- 수평으로 페이지가 더 있으면 오른쪽 화살표가 나타나며
+- 수직으로 페이지가 더 있으면 아래쪽 화살표가 나타납니다.
 
-![](https://goo.gl/YndSSF)
+--
 
-페이지를 분할한 이후에 미리보기를 화면 우측 하단에 화살표가 생긴것을 확인할 수 있습니다. 하위 페이지가 있는 경우 아래 화살표가 생깁니다.
+### 수평 분할
 
-![](https://goo.gl/ZJBqYH)
+![](https://lh3.googleusercontent.com/-roqz5ipfyyE/W1hZYYW1kVI/AAAAAAAAGyU/1aZL6WNA-QUXh4oAwPnp5HnwiS6QKBEhACHMYCw/s0/StrokesPlus_2018-07-25_3.png)
+
+**---** 를 입력하여 페이지 분할
+
+![](https://lh3.googleusercontent.com/-GOzUONPZ1Sw/W1hYjH1UhHI/AAAAAAAAGyE/3FbQ9AU3VsgVEEZ9pynXv5DdnJMRzlCcQCHMYCw/s0/StrokesPlus_2018-07-25_1.png)
+
+note:
+
+- --- 사용하여 페이지를 분할하면
+- SLIDES 패널에서 다음과 같은 목록을 볼 수 있습니다.
+
+--
+
+### 수직 분할
+
+**--** 를 사용하여 수직분할
+
+![](https://lh3.googleusercontent.com/-iGKuF499b1M/W1haA8MzH2I/AAAAAAAAGyg/KCC8jPTu6AAXj4zFoZHv9yXb7QowW2ggQCHMYCw/s0/StrokesPlus_2018-07-25_4.png)<!-- .element: class="left"-->
+
+![](https://lh3.googleusercontent.com/-pgZr6SUcv6Y/W1hYn6ZPV2I/AAAAAAAAGyI/jASUdyuZ39Qnj1tay-GIkozit1mgEaTMACHMYCw/s0/StrokesPlus_2018-07-25_2.png)<!-- .element: class="right"-->
+
+우측 하단 화살표<!-- .element: class="center"-->
+
+![](https://lh3.googleusercontent.com/-ktdQcGb3OTg/W1gr-GfpWWI/AAAAAAAAGxY/V4lvmpN_5H0LmRfQEJNSMl3ilOni-B_WgCHMYCw/s0/StrokesPlus_2018-07-25_16-51-30.png)
+
+note:
+
+- **--** 를 사용하여 수직분할하면 해당 페이지 하위로 구분됩니다.
+- 페이지를 분할하면 우측 하단에 화살표가 생긴것을 확인할 수 있습니다.
+- 하위 페이지가 있는 경우 아래 화살표가 생깁니다.
 
 ---
 
@@ -356,72 +451,348 @@ note:
 ### 색상변경
 
 ```html
-Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span>
+Highlight
+<span class="fragment highlight-red">red</span>
+<span class="fragment highlight-blue">blue</span>
+<span class="fragment highlight-green">green</span>
 ```
 
-### 줄 단위
+Highlight
+
+<span class="fragment highlight-red">red</span>
+<span class="fragment highlight-blue">blue</span>
+<span class="fragment highlight-green">green</span>
+
+note:
+
+- 이렇게 작성하면 각각의 red, blue, green 의 글자색이 변경됩니다.
+- span 태그를 사용하여 작성합니다.
+- class 에 fragment 를 추가합니다.
+- 그리고 클래스에 변경될 색상을 작성합니다.
+- 사전에 정의된 hightligh-red, highlight-blue, hightlight-green 을 사용할 수 있습니다.
+
+--
+
+### html 주석
+
+```
+<!-- 주석 내용 -->
+```
+
+예제
+
+```
+<!-- 본문 시작 -->
+<div class="main-article">
+  ...
+</div>
+<!-- 본문 끝 -->
+```
+
+<!-- 주석 내용 -->
+
+note:
+
+- 문단 단위로 애니메이션을 지정할 수 있습니다.
+- 확대, 축소, 사라지기, 나타나기 를 표현할 수 있습니다.
+- 작성은 html 주석 코드를 사용합니다.
+- Left Angle Braket 느낌표, 대쉬 2 개 로 열고
+- 대쉬 2 개 Right Angle Braket 로 닫습니다.
+- 이렇게 작성한 내용은 발표화면에 표시되지 않습니다.
+
+--
+
+### 문단 단위
 
 ```html
-grow <!-- .element: class="fragment grow" -->
+grow(확대) <!-- .element: class="fragment grow" -->
 
-shrink <!-- .element: class="fragment shrink" -->
+shrink(축소) <!-- .element: class="fragment shrink" -->
 
-fade-out <!-- .element: class="fragment fade-out " -->
+fade-out(사라지기) <!-- .element: class="fragment fade-out " -->
 
-fade-up (also down, left and right!) <!-- .element: class="fragment fade-up" -->
+fade-up(나타내기)<!-- .element: class="fragment fade-up" -->
 
-current-visible <!-- .element: class="fragment current-visible" -->
+current-visible(현재만 보이기) <!-- .element: class="fragment current-visible" -->
 ```
 
-fragment 클래스를 주고 추가적인 액션을 정의 합니다.
+grow(확대) <!-- .element: class="fragment grow" -->
 
-- grow
-- shrink
-- fade-out
-- fase-up, down, left, right
-- current-visible
+shrink(축소) <!-- .element: class="fragment shrink" -->
+
+fade-out(사라지기) <!-- .element: class="fragment fade-out " -->
+
+fade-up(나타내기) <!-- .element: class="fragment fade-up" -->
+
+current-visible(현재만 보이기) <!-- .element: class="fragment current-visible" -->
+
+note:
+
+- html 주석을 사용하여
+- 확대, 축소, 사라지기, 나타내기를 지정합니다.
+
+--
+
+### fade-in
+
+```
+위<!-- .element: class="fragment fade-up" -->
+
+아래<!-- .element: class="fragment fade-down" -->
+
+왼쪽<!-- .element: class="fragment fade-left" -->
+
+오른쪽<!-- .element: class="fragment fade-right" -->
+```
+
+위<!-- .element: class="fragment fade-up" -->
+
+아래<!-- .element: class="fragment fade-down" -->
+
+왼쪽<!-- .element: class="fragment fade-left" -->
+
+오른쪽<!-- .element: class="fragment fade-right" -->
+
+note:
+
+- 나타나기는 위,아래,좌,우 모두 선택할 수 있습니다.
+- 클래스로 지정한 fade-up 위치에 fade-down, fade-left, fade-right 를 입력하여 작성합니다.
 
 ---
 
 ## 배경 변경
 
-### 색상
+- 색상 변경
+- 이미지 변경
 
-### 이미지
+note:
+
+- 테마를 통해서 전체 슬라이드의 배경 색상을 변경할 수 있지만
+- 각각 페이지에 배경 색상 지정을 통해서도 변경할 수 있습니다.
+- 또는 이미지를 배경으로 넣을 수 있습니다
+
+--
+
+<!-- .slide: data-background="#006064" -->
+
+### 배경 색상
+
+RGB
+
+```
+<!-- .slide: data-background="#006064" -->
+```
+
+hsla
+
+```
+<!-- .slide: data-background="hsla(0,100%,50%,0.5)" -->
+```
+
+note:
+
+- html 주석 코드를 사용하여 색상을 지정합니다.
+- 16 진수 RGB 값을 이용하여 색상을 지정할 수 있으며
+- Hue-saturation-lightness-alpha 모델인 hsla 를 사용해서도 색상을 지정할 수 있습니다.
+- 현재 페이지는 위에 있는 RGB 코드를 사용하여 작성하였습니다.
+
+--
+
+<!-- .slide: data-background="https://goo.gl/UfMdw8" data-background-transition="slide" -->
+
+### 배경 이미지
+
+```html
+<!-- .slide: data-background="https://goo.gl/UfMdw8"  -->
+```
+
+<br>
+<br>
+
+배경 이미지가 벗어나는 경우 custom-theme 사용
+
+```html
+.reveal div.slide-background.present {
+  background-size: contain;
+}
+```
+
+note:
+
+- html 주석 코드를 사용하여 이미지를 지정합니다.
+- 이미지의 크기가 큰 경우 화면을 벗어나게 되는데 이때는 custom-theme 를 적용하여 페이지 안에 모두 들어오게 작성할 수 있습니다.
+- 뒤에서 커스텀 테마를 작성하겠습니다.
+
+---
+
+## 속성 지정
+
+![](https://lh3.googleusercontent.com/-4ce82-Cmr5M/W1gosDcyLLI/AAAAAAAAGxM/iW-krCR2cMQSnlxvp6Pu_DkdtbW8gI6mwCHMYCw/s0/StrokesPlus_2018-07-25_16-37-31.png)
+
+```yml
+theme : "night"
+highlightTheme: "darkula"
+customTheme : "reveal-custom-theme"
+transition: "slide"
+transitionSpeed: 'slow'
+```
+
+note:
+
+- 문서 상단에 속성을 지정할 수 있습니다.
+- 대쉬 3 개를 사용하여 속성의 시작과 종료를 지정합니다.
 
 ---
 
 ## 테마
 
+```
+theme : "night"
+```
+
+테마 목록
+
+- black
+- white
+- league
+- sky
+- beige
+- simple
+- serif
+- blood
+- night
+- moon
+- solarized
+
+note:
+
+- 문서 상단에 지정하는 속성을 이용하여 테마를 지정합니다.
+- night 외에, black, white, league, sky, beige, simple, serif, blood, night, moon, solarized,
+- 기본은 black 으로 지정되어 있습니다.
+- 각각의 모습은 테마를 변경해 보면서 확인할 수 있습니다.
+
 --
 
-## 노트 작성
+### 테마 확인
 
-**showNotes** 속성 을 정의합니다.
+아래 링크를 누르면 테마가 변경됩니다.
+
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
+
+note:
+
+- 아래 링크를 누르면 테마가 변경됩니다.
+
+---
+
+## 하이라이트 테마
+
+```yml
+highlightTheme: "darkula"
+```
+
+https://highlightjs.org/static/demo/
+
+![](https://lh3.googleusercontent.com/-G4i0quIB6wg/W1gvRZF4KNI/AAAAAAAAGxo/5O_ZzodrTqg0rlXYXGMLRkC0ckpicbcUACHMYCw/s0/StrokesPlus_2018-07-25_17-05-35.png)
+
+note:
+
+- 코드 블럭의 하이라이트 테마를 지정할 수 있습니다.
+- https://highlightjs.org/static/demo/ 에서 79 가지 코드 테마를 확인할 수 있습니다.
+
+---
+
+### 사용자 정의 테마
+
+reveal-custom-theme.css 파일 생성
+
+greenyellow 색상 추가
+
+```css
+.reveal .greenyellow {
+  color: greenyellow;
+}
+```
+
+--
+
+### 사용자 정의 적용
 
 ```
-showNotes: "true";
+그린옐로우 색상 적용<!-- .element: class="fragment fade-up greenyellow"-->
 ```
 
-기본값은 false 이므로 작성하지 않아도 됩니다.
+적용한 클래스
 
-```
-showNotes: "false";
+- fragment
+- fade-up
+- greenyello
+
+<hr>
+
+그린옐로우 색상 적용<!-- .element: class="fragment fade-up greenyellow"-->
+
+note:
+
+- css 파일을 추가하여 사용자 정의 테마를 만들 수 있습니다.
+- reveal-custom-theme.css 파일을 생성합니다.
+- 파일명은 원하시는 것으로 바꿀 수 있습니다.
+- 사용할 때 파일명만 정확하게 입력하면 됩니다.
+- greenyellow 색상을 추가하겠습니다.
+- 클래스명을 greenyellow 로 주었습니다.
+- html 주석 코드를 사용하여 생성한 클래스를 적용합니다.
+
+--
+
+### 테마 조합
+
+![](https://lh3.googleusercontent.com/-4ce82-Cmr5M/W1gosDcyLLI/AAAAAAAAGxM/iW-krCR2cMQSnlxvp6Pu_DkdtbW8gI6mwCHMYCw/s0/StrokesPlus_2018-07-25_16-37-31.png)
+
+```yml
+theme : "night"
+highlightTheme: "darkula"
+customTheme : "reveal-custom-theme"
+transition: "slide"
 ```
 
 note:
 
-- 노트에 작성을 하면 발표자만 확인할 수 있습니다.
-- 옵션을 작성하여 모두 보이게도 할 수 있습니다.
-- 기본값은 **false** 이므로 작성하지 않아도 됩니다.
+- theme, highlighTheme, customTheme, transition 을 정의하였습니다.
 
 ---
 
 ## 발표
 
-ESC
-이동키,
-스페이스바
+- ESC : Overview mode
+- 이동키 : 상하좌우로 페이지 이동
+- 스페이스바 : 다음 페이지로 이동
+- S : 스피커 노트
+
+note:
+
+- 프리젠테이션 발표시 ESC, 이동키, 스페이스바, S 키를 사용할 수 있습니다.
+
+--
+
+### ESC
+
+![](https://lh3.googleusercontent.com/-Z5UxKMNDPA4/W1hXQicqjMI/AAAAAAAAGx4/m11kX5oB9r4tyvgy_RbkEHVVL3qax_5bACHMYCw/s0/StrokesPlus_2018-07-25_19-56-12.png)
+
+note:
+
+- ESC 키를 누르면 overview mode 로 전환됩니다.
+- 이 화면에서 페이지를 선택하면 해당 페이지로 이동하고
+- ESC 키를 누르면 원래 페이지로 이동합니다.
 
 ---
 
@@ -431,3 +802,4 @@ ESC
 - https://revealjs.com
 - https://raw.githubusercontent.com/evilz/vscode-reveal/master/sample.md
 - https://dymaxionkim.github.io/beautiful-jekyll/2017-01-25-Revealjs/
+- https://highlightjs.org/

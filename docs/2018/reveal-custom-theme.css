@@ -27,7 +27,6 @@
 }
 
 .reveal .greenyellow {
-  /* display: inline; */
   color: greenyellow;
 }
 
@@ -49,6 +48,11 @@
 .reveal .right {
   float: right;
   width: 45%;
+}
+
+.reveal .center {
+  display: inline-block;
+  width: 100%;
 }
 
 .reveal .header {
