@@ -675,6 +675,12 @@ note:
 
 ### 테마 확인
 
+```
+<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
+```
+
+<br><br>
+
 아래 링크를 누르면 테마가 변경됩니다.
 
 <a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
