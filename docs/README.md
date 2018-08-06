@@ -15,6 +15,8 @@
 
 ## 2018
 
+- [vscode 에서 revealjs 사용](./2018/vscode 에서 revealjs 사용-export)
+
 ### 컨퍼런스
 
 - [IBM Cloud & Data Summit 2018](./2018/IBM Cloud & Data Summit 2018-export)
