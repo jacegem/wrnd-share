@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RevealJS : /Users/jace/Workspace/courses/wrnd-share/docs/draft/블록체인 인공지능으로 재난을 극복하자.md</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/night.css" id="theme">
+         <link rel="stylesheet" href="reveal-custom-theme.css" id="theme">
+       
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/darkula.css">
+
+        
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <style type="text/css">
+            @page {    
+              margin: 0;
+              size: auto; 
+            }
+        </style>
+
+        <script>
+         if(window.location.search.match( /print-pdf-now/gi )) {
+           window.print();
+         }
+      </script>
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template">
+IBM developerWorks Meetup
+
+40 번째 밋업 :
+
+## 블록체인&인공지능으로 재난을 극복하자! #Call_for_Code
+
+2018.08.27 / 마루 180<!-- .element: class="right block"-->
+</script></section><section ><section data-markdown><script type="text/template">
+## Call for Code
+
+https://developer.ibm.com/kr/callforcode/
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide: data-background="https://content.screencast.com/users/beneapp/folders/Snagit/media/87b8d950-7bec-4527-9de9-b16fcefceb41/2018-08-27_20-41-04.png" -->
+</script></section></section><section ><section data-markdown><script type="text/template">
+![](https://content.screencast.com/users/beneapp/folders/Snagit/media/b94075b1-052b-4fc8-8ecc-37316b4b4ecd/2018-08-27_20-46-31.png)
+
+https://developer.ibm.com/kr/journey/track-an-object-in-space/
+</script></section><section data-markdown><script type="text/template">
+<!-- .slide:data-background="https://content.screencast.com/users/beneapp/folders/Snagit/media/8eed4064-2039-463f-be13-fa00e16d7a40/2018-08-27_20-47-51.png"-->
+
+`1. NODE-RED`<!-- .element: class="fragment fade-up block" -->
+
+`2. Watson Assisteant`<!-- .element: class="fragment fade-up block" -->
+
+`3. locationIQ`<!-- .element: class="fragment fade-up block" -->
+</script></section><section data-markdown><script type="text/template">
+## NODE-RED
+
+https://node-red-jace.mybluemix.net/
+
+![](https://content.screencast.com/users/beneapp/folders/Snagit/media/2f086f6d-fdb5-4365-a57e-5c9323e6c949/2018-08-27_20-54-09.png)
+</script></section><section data-markdown><script type="text/template">
+![](https://content.screencast.com/users/beneapp/folders/Snagit/media/810093f1-a38e-4251-9cca-0a28200cce4c/2018-08-27_20-55-11.png)
+
+- username : jace
+- password : noderedjace
+</script></section><section data-markdown><script type="text/template">
+![](https://content.screencast.com/users/beneapp/folders/Snagit/media/3b2e4acb-f1f4-47b3-af9b-6a68ad93a296/2018-08-27_20-56-37.png)
+
+https://node-red-jace.mybluemix.net/ 에서
+
+/hello 접속시 `hello world` 출력
+</script></section></section><section  data-markdown><script type="text/template">
+## Watson Assistant
+
+- 네트워크 문제로 실습 불가
+</script></section><section  data-markdown><script type="text/template">
+## LocationIQ
+
+https://locationiq.com/
+
+![](https://content.screencast.com/users/beneapp/folders/Snagit/media/14260cde-26c1-4ede-9780-09246bcd55d5/2018-08-27_21-03-42.png)
+
+지오코딩, 역지오코딩 제공
+</script></section><section  data-markdown><script type="text/template">
+![](https://img.freepik.com/free-vector/thank-you-lettering-with-curls_1262-6964.jpg?size=338&ext=jpg)
+</script></section></div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/math/math.js', async: true }
+            ];
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default',
+              dependencies: deps
+            };
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+            var options = {
+  "notesSeparator": "note:",
+  "separator": "^[\r\n?|\n]---[\r\n?|\n]$",
+  "verticalSeparator": "^[\r\n?|\n]--[\r\n?|\n]$",
+  "theme": "night",
+  "highlightTheme": "darkula",
+  "controls": true,
+  "progress": true,
+  "slideNumber": false,
+  "history": true,
+  "keyboard": true,
+  "overview": true,
+  "center": true,
+  "touch": true,
+  "loop": false,
+  "rtl": false,
+  "shuffle": false,
+  "fragments": true,
+  "embedded": false,
+  "help": true,
+  "showNotes": false,
+  "autoSlide": 0,
+  "autoSlideStoppable": true,
+  "mouseWheel": false,
+  "hideAddressBar": true,
+  "previewLinks": false,
+  "transition": "slide",
+  "transitionSpeed": "slow",
+  "backgroundTransition": "default",
+  "viewDistance": 3,
+  "parallaxBackgroundImage": "",
+  "parallaxBackgroundSize": "",
+  "parallaxBackgroundHorizontal": null,
+  "parallaxBackgroundVertical": null,
+  "slideExplorerEnabled": true,
+  "browserPath": null,
+  "customTheme": "reveal-custom-theme",
+  "attributes": ""
+};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+
+        </script>
+        
+    </body>
+</html>
